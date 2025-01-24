@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1><u>HTML</u></h1>
+        <marquee width="50%" direction="right to left">
+        LET'S LEARN HTML....
+       </marquee>
+       <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="table.html">TABLE</a></li>
+            <li><a href="audio&video.html">AUDIO&VIDEO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+       </nav>
+       </header>
+       <link rel="stylesheet" href="styles.css">
+<body>
+    <main>
+        <section>
+            <h1><b><u>PLEASE ENTER YOUR DETAILS</u></b></h1>
+            <form action="#"
+                method="post">
+                <label for="name">Full Name:</label>
+                <input type="text"
+                id="name" name="name" required placeholder="Enter Your Name"
+                pattern="^[a-zA-Z\s]+$" title="Name should only contain letters and spaces">
+                <span id="nameError" class="error-message"></span>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" id="phone"required placeholder="Enter your phone number" pattern="^\d{10}$"
+                title="Phone number should be 10 digits without space or dashes.">
+                <br><br>
+                <label for="email"> Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email Address">
+                <br><br>
+
+                <button
+                    type="submit">SUBMIT</button>
+            
+            </form>
+        </section>
+
+
+    </main>
+    <style>
+        h2{
+            text-align: center;
+        }
+        form {
+            background-color:black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:  10px rgba(0,0,0.1);
+            max-width: 200px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="tele"]
+        {
+            background-color: #f9f9f9;
+        }
+        button {
+            background-color: #4c4c4c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        } 
+        button:hover {
+            background-color: #45a049;
+        }
+        a{
+            background-color: transparent !important;
+            text-decoration: none;
+        }
+    </style>
+    <footer>
+        <p>email:malinimarudhamuthu@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
